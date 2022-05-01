@@ -1,0 +1,42 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	margin: auto;
+	width: 100%;
+	font-family: "Inter", sans-serif;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background-color: hsl(0, 0%, 100%);
+}
+
+body::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	background-color: #f8f9fe;
+	border-bottom-left-radius: 18px;
+	border-bottom-right-radius: 18px;
+	width: 100%;
+	height: 210px;
+	background-color: #f8f9fe;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+code {
+	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+		monospace;
+}
+
+#root {
+	max-width: 1075px;
+	min-width: 270px;
+	margin: auto;
+	padding: 0 20px 30px 20px;
+}
